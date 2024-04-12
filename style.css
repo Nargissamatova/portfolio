@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('path/to/Montserrat-Regular.ttf') format('truetype');
+    /* Add additional src lines for different font weights/styles */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ECF2FF;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: #0E0922;
+    height: 637vh;
+}
+
+header {
+    margin: 0 auto;
+    width: 88%;
+}
+
+nav {
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 60px;
+    height: 50px;
+}
+
+nav ul {
+    width: 30%;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+}
+
+.header_container {
+    margin: 5em auto;
+    margin-bottom: 20em;
+    width: 68%;
+}
+
+.header_container h1 {
+    font-size: 96px;
+}
+
+.header_container h3 {
+    background: linear-gradient(90deg, rgba(255, 195, 253, 1) 14%, rgba(173, 148, 255, 1) 39%, rgba(102, 237, 255, 1) 55%);
+    -webkit-background-clip: text;
+    /* For better cross-browser support */
+    background-clip: text;
+    color: transparent;
+    /* Hides the original text */
+}
+
+.circle_period {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #BFACE2;
+    border-radius: 50%;
+}
+
+.header_name {
+    color: #FBE38D;
+}
+
+.header_description {
+    width: 300px;
+    border-left: 2px solid #ffffffb3;
+    margin-top: 1em;
+    padding-left: 1.5em;
+    font-size: 18px;
+}
+
+.header_description p {
+    color: #ffffffb3;
+    font-weight: 500;
+}
+
+button {
+    background-color: #87CB66;
+    width: 165px;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.buttons_container {
+    margin-top: 3em;
+}
+
+.buttons_container button:first-child {
+    margin-right: 0.5em;
+}
+
+.icons_container {
+    width: 50px;
+    position: absolute;
+    top: 33%;
+    right: 1em;
+}
+
+.icons_container img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1em;
+}
+
+/* ABOUT ME SECTION */
+.about_container {
+    width: 80%;
+    margin: 10em auto;
+    display: flex;
+}
+
+.about_container div {
+    width: 50%;
+}
+
+.about_my_projects_btn {
+    margin-top: 3em;
+}
+
+.about_img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.about_bubble_img {
+    position: relative;
+    width: 35%;
+    bottom: 10em;
+    left: 20em;
+}
+
+.about_right h1 {
+    text-align: right;
+    font-size: 96px;
+}
+
+.about_right p {
+    font-size: 18px;
+    margin-top: 1em;
+    text-align: justify;
+}
+
+/* FUN FACTS SECTION */
+.facts_container {
+    background-color: #ECF2FF;
+    width: 80%;
+    margin: 0 auto;
+    height: 20em;
+    border-radius: 50px;
+}
+
+.fun_facts h2 {
+    text-align: center;
+    margin: 3em;
+}
