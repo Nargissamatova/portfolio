@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('path/to/Montserrat-Regular.ttf') format('truetype');
+    /* Add additional src lines for different font weights/styles */
+}
+
+.skills_container h1 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 96px;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: start;
+    justify-content: start;
+    margin: 0;
+    position: relative;
+    color: #ffffff;
+}
+
+.skills_container h1:before {
+    content: attr(data-text);
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255, 195, 253, 1) 14%, rgba(173, 148, 255, 1) 39%, rgba(102, 237, 255, 0.614) 55%);
+    background-clip: text;
+    color: transparent;
+    background-size: 100% 90%;
+    line-height: 0.9;
+    clip-path: ellipse(120px 120px at -2.54% -9.25%);
+    animation: swing 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes swing {
+    0% {
+        -webkit-clip-path: ellipse(120px 120px at -2.54% -9.25%);
+        clip-path: ellipse(120px 120px at -2.54% -9.25%)
+    }
+
+    50% {
+        -webkit-clip-path: ellipse(120px 120px at 49.66% 64.36%);
+        clip-path: ellipse(120px 120px at 49.66% 64.36%);
+
+    }
+
+    100% {
+        -webkit-clip-path: ellipse(120px 120px at 102.62% -1.61%);
+        clip-path: ellipse(120px 120px at 102.62% -1.61%);
+    }
+}

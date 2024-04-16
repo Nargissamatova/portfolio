@@ -66,7 +66,8 @@ nav ul li a {
     font-size: 96px;
 }
 
-.header_container h3 {
+.header_container h3,
+h2 {
     background: linear-gradient(90deg, rgba(255, 195, 253, 1) 14%, rgba(173, 148, 255, 1) 39%, rgba(102, 237, 255, 1) 55%);
     -webkit-background-clip: text;
     /* For better cross-browser support */
@@ -135,12 +136,18 @@ button {
 /* ABOUT ME SECTION */
 .about_container {
     width: 80%;
-    margin: 10em auto;
+    margin: 12em auto;
     display: flex;
 }
 
 .about_container div {
     width: 50%;
+}
+
+.about_left {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .about_my_projects_btn {
@@ -149,14 +156,14 @@ button {
 
 .about_img {
     border-radius: 50%;
-    width: 80%;
+    width: 85%;
 }
 
 .about_bubble_img {
-    position: relative;
-    width: 35%;
-    bottom: 10em;
-    left: 20em;
+    position: absolute;
+    width: 13em;
+    left: 0;
+    top: 20em;
 }
 
 .about_right h1 {
@@ -165,21 +172,82 @@ button {
 }
 
 .about_right p {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 300;
     margin-top: 1em;
     text-align: justify;
 }
 
 /* FUN FACTS SECTION */
+.fun_facts {
+    margin: 15em auto;
+}
+
 .facts_container {
     background-color: #ECF2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     margin: 0 auto;
-    height: 20em;
     border-radius: 50px;
+}
+
+.facts_container section {
+    flex: 1;
+    padding: 4em;
+}
+
+.facts_container>section:nth-child(2) {
+    border-left: 1px solid #876CF3;
+    border-right: 1px solid #876CF3;
+
+}
+
+.facts_container section p {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
 }
 
 .fun_facts h2 {
     text-align: center;
     margin: 3em;
+    color: rgb(240, 202, 239);
+}
+
+/* SKILLS SECTION */
+.skills_container {
+    width: 80%;
+    margin: 18em auto;
+}
+
+.skills_cards_container {
+    display: flex;
+    margin: 3em auto;
+
+}
+
+.skills_card {
+    flex: 1;
+    background-color: #876CF3;
+    border-radius: 50px;
+    height: 21em;
+    margin: 10px;
+}
+
+.skills_card h3 {
+    text-align: center;
+}
+
+.skill_icon {
+    display: flex;
+    justify-content: center;
+}
+
+.skill_icon img {
+    width: 70px;
+    height: 70px;
+
 }
