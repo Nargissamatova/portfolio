@@ -233,7 +233,8 @@ button {
     width: 32.5%;
     text-align: center;
     padding: 3em;
-    background-color: #6806d855;
+    background-color: #6806d800;
+    border: 0.1em solid #876CF3;
     border-radius: 50px;
     box-shadow: inset rgba(10, 2, 31, 0.86) 0px 0px 60px -12px;
 }
@@ -288,4 +289,31 @@ button {
     border-radius: 50%;
     display: inline-block;
     margin-right: 1em;
+}
+
+.sticks_container {
+    display: flex;
+    justify-content: center;
+    margin: 12em;
+}
+
+.sticks {
+    width: 15em;
+}
+
+/* PROJECTS SECTION */
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.project:nth-child(1) {
+    grid-column: span 2;
+    /* This div spans across both columns */
 }
