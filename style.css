@@ -314,6 +314,6 @@ button {
 }
 
 .project:nth-child(1) {
-    grid-column: span 2;
+    grid-column: span 1;
     /* This div spans across both columns */
 }
