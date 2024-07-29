@@ -28,6 +28,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="burger_menu.css" />
     <meta name="theme-color" content="#ffffff" />
     <title>portfolio</title>
   </head>
@@ -35,7 +36,14 @@
     <header>
       <nav>
         <img src="images/logo.png" alt="" />
-        <ul>
+        <!-- burger menu -->
+        <div class="burger-menu" id="burgerMenu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <ul id="navLinks">
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Skills</a></li>
@@ -62,7 +70,7 @@
       </div>
       <!--MEDIA ICONS AREA-->
       <div class="icons_container">
-        <a href=""><img src="images/104498_facebook_icon (1).png" alt="" /></a>
+        <a href=""><img src="images/facebook_icon.png" alt="" /></a>
         <a href=""><img src="images/instagram_icon.png" alt="" /></a>
         <a href=""><img src="images/github_icon.png" alt="" /></a>
         <a href=""><img src="images/linkedin_icon.png" alt="" /></a>
@@ -194,19 +202,88 @@
         </div>
       </div>
       <div class="projects_container">
-        <div class="project"></div>
+        <div class="project">
+          <div class="overlay">See More</div>
+        </div>
         <div class="project">
           <h1>Projects</h1>
           <h1>Projects</h1>
           <h1>Projects</h1>
         </div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <div class="project">
+          <div class="overlay">See More</div>
+        </div>
+        <div class="project">
+          <div class="overlay">See More</div>
+        </div>
+        <div class="project">
+          <div class="overlay">See More</div>
+        </div>
+        <div class="project">
+          <div class="overlay">See More</div>
+        </div>
       </div>
     </main>
-    <footer>...</footer>
+
+    <footer>
+      <div class="form_container">
+        <h3>Let's talk</h3>
+        <form action="">
+          <div class="input_container">
+            <div class="input_group">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="input_group">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </div>
+          </div>
+          <div class="textarea_container">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button>Send</button>
+        </form>
+      </div>
+      <div class="form_info">
+        <h3>
+          Nargis Samatova,<br />
+          Full-Stack Web Developer
+        </h3>
+
+        <div class="footer_nav">
+          <nav>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Skills</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <p>
+            Email: <br />
+            nargissamatova16@gmail.com <br />
+            Helsinki, Finland
+          </p>
+        </div>
+        <div class="footer_socmedia">
+          <div class="footer_icons">
+            <a href=""><img src="images/facebook_icon.png" alt="" /></a>
+            <a href=""><img src="images/instagram_icon.png" alt="" /></a>
+            <a href=""><img src="images/github_icon.png" alt="" /></a>
+            <a href=""><img src="images/linkedin_icon.png" alt="" /></a>
+          </div>
+          <div class="footer_logo"><img src="images/logo.png" alt="" /></div>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

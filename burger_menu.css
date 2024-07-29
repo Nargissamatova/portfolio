@@ -1,0 +1,61 @@
+/* Style for the burger menu */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.burger-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Responsive styling */
+@media (max-width: 940px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        width: 100%;
+        height: 50vh;
+        background-color: #29194a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s ease;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    .burger-menu.toggle .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger-menu.toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.toggle .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}

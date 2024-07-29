@@ -26,7 +26,7 @@ header {
     width: 88%;
 }
 
-nav {
+header nav {
     margin: 2em auto;
     display: flex;
     justify-content: space-between;
@@ -315,6 +315,8 @@ button {
     height: 300px;
     background-position: center;
     border-radius: 1em;
+    position: relative;
+    overflow: hidden;
 }
 
 .project h1 {
@@ -342,4 +344,122 @@ button {
 .project:nth-child(6) {
     grid-column: span 2;
     background-image: url('images/booksite.png');
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+}
+
+/* FOOTER SECTION */
+footer {
+    display: flex;
+    width: 100%;
+    margin-top: 10em;
+}
+
+footer h3 {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.form_container {
+    flex: 1;
+    background-color: #331E84;
+}
+
+form {
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.form_info {
+    flex: 1;
+    background-color: #070F2B;
+}
+
+
+.input_container {
+    display: flex;
+    gap: 20px;
+}
+
+.input_group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+}
+
+textarea,
+input {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* form info section */
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer li {
+    padding: 1em;
+}
+
+.footer_nav {
+    display: flex;
+    padding-top: 4em;
+    justify-content: space-around;
+
+}
+
+.footer_socmedia {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 2em;
+    margin-right: 5em;
+    margin-top: 2em;
+    border-top: 1px solid white;
+}
+
+.footer_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 2em;
+}
+
+.footer_icons img {
+    width: 35px;
+}
+
+.footer_socmedia .footer_logo img {
+    width: 70px;
 }
