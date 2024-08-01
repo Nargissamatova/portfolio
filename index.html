@@ -3,32 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_package/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_package/favicon-16x16.png"
-    />
-    <link
-      rel="mask-icon"
-      href="favicon_package/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="animations.css" />
-    <link rel="stylesheet" href="burger_menu.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/burger_menu.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <meta name="theme-color" content="#ffffff" />
     <title>portfolio</title>
   </head>
@@ -44,11 +28,11 @@
         </div>
 
         <ul id="navLinks">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
       <div class="header_container">
@@ -64,7 +48,7 @@
           </p>
         </div>
         <div class="buttons_container">
-          <button>Contacts</button>
+          <button><a href="#contacts">Contacts</a></button>
           <button>Resume</button>
         </div>
       </div>
@@ -78,7 +62,7 @@
     </header>
 
     <main>
-      <div class="about_container">
+      <div class="about_container" id="about">
         <div class="about_left">
           <img
             src="images/about_me.jpg"
@@ -139,7 +123,7 @@
         </div>
       </div>
 
-      <div class="skills_container">
+      <div class="skills_container" id="skills">
         <h1 data-text="My skills">My skills</h1>
         <div class="skills_cards_container">
           <div class="skills_card">
@@ -201,7 +185,7 @@
           />
         </div>
       </div>
-      <div class="projects_container">
+      <div class="projects_container" id="projects">
         <div class="project">
           <div class="overlay">See More</div>
         </div>
@@ -225,7 +209,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer id="contacts">
       <div class="form_container">
         <h3>Let's talk</h3>
         <form action="">
@@ -256,7 +240,6 @@
           Nargis Samatova,<br />
           Full-Stack Web Developer
         </h3>
-
         <div class="footer_nav">
           <nav>
             <ul>

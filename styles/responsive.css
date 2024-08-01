@@ -1,0 +1,141 @@
+@media (max-width: 1024px) {
+    .projects_container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets */
+        grid-gap: 2em;
+    }
+
+    .project h1 {
+        font-size: 60px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .project:nth-child(1),
+    .project:nth-child(3),
+    .project:nth-child(6) {
+        grid-column: span 2;
+        /* Span two columns still */
+    }
+}
+
+@media (max-width: 1000px) {
+    .about_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_right h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .about_left {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .skills_card {
+        width: 48%;
+        /* Two cards per row */
+        margin-bottom: 20px;
+        /* Space between rows */
+    }
+
+    .facts_container>section:nth-child(2) {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #876CF3;
+        border-bottom: 1px solid #876CF3;
+    }
+
+    .projects_container {
+        grid-template-columns: 1fr;
+        /* 1 column on smaller screens */
+        grid-gap: 1.5em;
+    }
+
+    .project {
+        height: 250px;
+        /* Adjust height for smaller screens */
+    }
+
+    .projects_container .project:nth-child(2) {
+        display: none;
+    }
+
+
+    .project:nth-child(1),
+    .project:nth-child(3),
+    .project:nth-child(6) {
+        grid-column: span 1;
+        /* Span one column on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .header_container h1 {
+        font-size: 60px;
+        padding-top: 0.5em;
+    }
+
+    .buttons_container button {
+        margin-bottom: 0.5em;
+    }
+
+    .facts_container section {
+        padding: 2em;
+    }
+
+    .skills_card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills_container h1 {
+        font-size: 28px;
+    }
+
+    .fun_facts h2 {
+        font-size: 20px;
+    }
+
+    .project {
+        height: 200px;
+        /* Further reduce height for mobile devices */
+    }
+
+    .projects_container .project:nth-child(2) {
+        display: none;
+    }
+
+    .project h1 {
+        font-size: 36px;
+        /* Adjust font size for mobile */
+    }
+
+    .overlay {
+        font-size: 18px;
+        /* Adjust overlay text size for mobile */
+    }
+
+
+    .tools,
+    footer {
+        display: block;
+    }
+
+    .form_container {
+        padding: 1em;
+    }
+
+    .footer_socmedia .footer_logo img {
+        width: 40px;
+        margin: 2em;
+
+    }
+
+}
