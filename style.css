@@ -119,6 +119,11 @@ button {
     font-size: 16px;
     font-weight: bold;
     color: #000000;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #876CF3;
 }
 
 .buttons_container {
